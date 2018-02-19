@@ -19,7 +19,7 @@
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-node-resolve": "^3.0.2",
-    "xo": "^0.18.2"
+    "xo": "^0.20.3"
   },
   "dependencies": {
     "flux-standard-action": "^2.0.1",
@@ -28,6 +28,9 @@
   },
   "xo": {
     "esnext": true,
-    "space": 2
+    "space": 2,
+    "ignores": [
+      "rollup.config.js"
+    ]
   }
 }

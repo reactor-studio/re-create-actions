@@ -1,12 +1,13 @@
 import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import babelrc from 'babelrc-rollup';
+// import commonjs from 'rollup-plugin-commonjs';
 
-let pkg = require('./package.json');
-let external = Object.keys(pkg.dependencies);
+const pkg = require('./package.json');
 
-let plugins = [
+const external = Object.keys(pkg.dependencies);
+
+const plugins = [
   resolve({
     jsnext: true,
     main: true
