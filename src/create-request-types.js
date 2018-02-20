@@ -1,13 +1,15 @@
-const requestTypeSuffixes = require('./request-type-suffixes');
+import createConfig from './create-config';
 
 function createRequestTypes(base) {
+  const config = createConfig();
   const res = {};
+  const suffixes = config.requestSuffixes;
 
-  [requestTypeSuffixes.REQUESTED, requestTypeSuffixes.COMPLETED, requestTypeSuffixes.FAILED].forEach(type => {
+  suffixes.forEach(type => {
     res[type] = `${base}_${type}`;
   });
 
   return res;
 }
 
-module.exports = createRequestTypes;
+export default createRequestTypes;

@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "es2015",
+    ["env", {
+      "modules": false
+    }]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "external-helpers",
+        "transform-object-rest-spread"
+      ]
+    },
+    "test":{
+      "plugins": [
+        "transform-runtime", 
+        "external-helpers",
+        "transform-object-rest-spread"
+      ]
+    }
+  }
+}
