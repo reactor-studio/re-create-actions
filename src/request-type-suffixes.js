@@ -1,7 +1,12 @@
-const suffixes = Object.freeze({
+export const SuffixEnum = Object.freeze({
   REQUESTED: 'REQUESTED',
   COMPLETED: 'COMPLETED',
   FAILED: 'FAILED'
 });
 
-module.exports = suffixes;
+
+export default [
+  SuffixEnum.REQUESTED,
+  SuffixEnum.COMPLETED,
+  SuffixEnum.FAILED
+];
