@@ -1,6 +1,6 @@
 {
   "name": "re-create-actions",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Group of utilities for creating Flux standard actions.",
   "main": "dist/bundle.js",
   "repository": "https://github.com/reactor-studio/re-create-actions",
