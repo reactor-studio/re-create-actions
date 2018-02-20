@@ -16,6 +16,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "dinodsaurus",
+      "name": "Dino Trojak",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1530952?v=4",
+      "profile": "http://reactor.studio",
+      "contributions": [
+        "code"
+      ]
     }
   ]
 }
