@@ -1,7 +1,7 @@
 # Introduction
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![Build Status](https://travis-ci.org/reactor-studio/re-create-actions.svg?branch=master)](https://travis-ci.org/reactor-studio/re-create-actions)
+[![All Contributors](https://img.shields.io/badge/all_contributors--orange.svg?style=flat-square)](#contributors)
+
 
 Reduce boilerplate of your Redux actions by creating [flux-standard-actions](https://github.com/acdlite/flux-standard-action) with a set of utilities this package provides.
 
