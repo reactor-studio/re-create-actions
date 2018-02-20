@@ -1,7 +1,7 @@
 import test from 'ava';
 
 import {isFSA} from 'flux-standard-action';
-import {createAction} from '../../dist';
+import createAction from '../create-action';
 
 // Constants
 const SIMPLE_ACTION_CONSTANT = 'SIMPLE_ACTION_CONSTANT';
