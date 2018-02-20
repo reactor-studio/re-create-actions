@@ -1,6 +1,6 @@
 import createAction from './create-action';
 
-export default function(types) {
+export default function (types) {
   const res = {};
 
   Object.keys(types).forEach(type => {

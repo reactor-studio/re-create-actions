@@ -1,6 +1,7 @@
-import {sharedConfig as config} from './create-config';
+import createConfig from './create-config';
 
 function createRequestTypes(base) {
+  const config = createConfig();
   const res = {};
   const suffixes = config.requestSuffixes;
 

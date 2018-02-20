@@ -4,7 +4,6 @@ export const SuffixEnum = Object.freeze({
   FAILED: 'FAILED'
 });
 
-
 export default [
   SuffixEnum.REQUESTED,
   SuffixEnum.COMPLETED,
