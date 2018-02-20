@@ -2,22 +2,37 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
 Reduce boilerplate of your Redux actions by creating [flux-standard-actions](https://github.com/acdlite/flux-standard-action) with a set of utilities this package provides.
 
 ## TL;DR
 
-### Table of contents
-* [Install](#install)
-* [Usage](#usage)
-* [API](#api)
-  * [createAction](#createaction)
-    * [`createAction(type)`](#createactiontype)
-    * [`createAction(type, payloadCreator)`](#createactiontype-payloadcreator)
-    * [`createAction(type, payloadCreator, metaCreator)`](#createactiontype-payloadcreator-metacreator)
-  * [createRequestTypes](#createRequestTypes)
-  * []
+```javascript
+// actions.js
+import {
+  createAction,
+  createRequestTypes,
+  createRequestActions
+} from 're-create-actions';
 
-## Install
+// Constans
+const GET_GITHUB_USERS = 'GET_GITHUB_USERS';
+
+// Create action creator
+export const getGithubUsers = createAction(GET_GITHUB_USERS);
+// Use: dispatch(getGithubUsers())
+
+// Create network types/constants
+const GET_GITHUB_USERS_RT = createRequestTypes('GET_GITHUB_USERS_RT');
+// Use: GET_GITHUB_USERS_RT.REQUESTED, GET_GITHUB_USERS_RT.COMPLETED, GET_GITHUB_USERS_RT.FAILED
+
+// Create actions from network types
+const getGithubUsersRT = createRequestActions(GET_GITHUB_USERS_RT);
+// Use: dispatch(getGithubUsersRT.requested())
+
+```
+
+# Install
 
 ### NPM
 ```bash
@@ -29,19 +44,41 @@ $ npm install re-create-actions --save
 $ yarn add re-create-actions
 ```
 
-## Usage
+# Usage
 Every helper will create action that is defined in shape by Flux standard action. We decided to go with Flux standard action because it gives you definition of minimal, common standards that are human-friendly and enable
 us to create assumptions about the shape of our actions.
 
 *NOTE*: You can't disable flux standard action structure at the moment. But there is an [open issue]() for this.
 
-## API
+# API
 
-### createAction
+## createAction (type, payloadCreator, metaCreator)
 
+#### type (required)
+Type: `string`
+
+Type for your type property in [action](https://redux.js.org/basics/actions)
+
+#### payloadCreator (optional)
+Type: `function`
+
+Custom payload creator for action payload
+
+#### metaCreator (optional)
+Type: `function`
+
+Custom meta creator for action
+
+
+# createRequestTypes(type)
+
+#### type
+Type: `string`
+
+Type for your request types
 
 ## Credits
-Projects was inspired by headaches given from reading bunch of boilerplates` during pull request reveiws at [reactor.studio](https://github.com/reactor-studio`).
+Projects was inspired by headaches given from reading bunch of boilerplates during pull request reveiws at [reactor.studio](https://github.com/reactor-studio`).
 
 API for this package was inspired by this awesome projects:
 * [flux-standard-action](https://github.com/acdlite/flux-standard-action)
