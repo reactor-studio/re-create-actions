@@ -1,5 +1,7 @@
 # Introduction
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 Reduce boilerplate of your Redux actions by creating [flux-standard-actions](https://github.com/acdlite/flux-standard-action) with a set of utilities this package provides.
 
 ## TL;DR
@@ -51,7 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/1723170?v=4" width="100px;"/><br /><sub><b>Vedran Blazenka</b></sub>](https://www.vblazenka.com/)<br />[💻](https://github.com/Vedran Blazenka/re-create-actions/commits?author=wedranb "Code") [📖](https://github.com/Vedran Blazenka/re-create-actions/commits?author=wedranb "Documentation") |
+| [<img src="https://avatars3.githubusercontent.com/u/1723170?v=4" width="100px;"/><br /><sub><b>Vedran Blazenka</b></sub>](https://www.vblazenka.com/)<br />[💻](https://github.com/reactor-studio/re-create-actions/commits?author=wedranb "Code") [📖](https://github.com/reactor-studio/re-create-actions/commits?author=wedranb "Documentation") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
