@@ -1,6 +1,7 @@
 import test from 'ava';
 
-import {createRequestTypes, createConfig} from '../../dist';
+import createRequestTypes from '../create-request-types';
+import {saveConfig} from '../create-config';
 
 // Constants
 const SIMPLE_ACTION_CONSTANT = 'SIMPLE_ACTION_CONSTANT';
@@ -21,7 +22,7 @@ test('createRequestTypes should return a list of types with request suffixes', t
 });
 
 test('createRequestTypes should return a list of types with request suffixes#2', t => {
-  createConfig({
+  saveConfig({
     requestSuffixes: ['START', 'DONE', 'FAIL']
   });
 

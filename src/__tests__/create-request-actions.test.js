@@ -1,6 +1,7 @@
 import test from 'ava';
 
-import {createRequestTypes, createRequestActions} from '../../dist';
+import createRequestTypes from '../create-request-types';
+import createRequestActions from '../create-request-actions';
 
 test('should return valid action creators for request types', t => {
   const SIMPLE_ACTION_RT = createRequestTypes('SIMPLE_ACTION_RT');

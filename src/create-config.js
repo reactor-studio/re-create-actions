@@ -1,19 +1,23 @@
 import defaultRTSuffixes from './request-type-suffixes';
 
-const createConfig = ({requestSuffixes = defaultRTSuffixes}) => {
-  let config = {};
-  if (requestSuffixes) {
-    try {
-      config.requestSuffixes = requestSuffixes;
-    } catch (error) {
-      console.warn('Request suffixes are already set somewhere in your code.');
-    }
+let config = {
+  requestSuffixes: defaultRTSuffixes
+};
 
-    // This prevents direct access and modification of shared config object
-    config = Object.freeze(config);
+export const saveConfig = newConfig => {
+  config = {
+    ...config,
+    ...newConfig
+  };
+};
 
-    return config;
+const createConfig = req => {
+  if (req && req.requestSuffixes) {
+    config.requestSuffixes = req.requestSuffixes;
   }
+  // This prevents direct access and modification of shared config object
+  config = Object.freeze(config);
+  return config;
 };
 
 export default createConfig;
