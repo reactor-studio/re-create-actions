@@ -8,7 +8,9 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "devDependencies": {
     "ava": "^0.25.0",

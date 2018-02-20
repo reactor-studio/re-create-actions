@@ -47,6 +47,7 @@ API for this package was inspired by this awesome projects:
 * [flux-standard-action](https://github.com/acdlite/flux-standard-action)
 * [redux-actions](https://github.com/reduxactions/redux-actions)
 
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
