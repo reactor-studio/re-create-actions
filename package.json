@@ -2,7 +2,7 @@
   "name": "re-create-actions",
   "version": "1.0.0",
   "description": "Group of utilities for creating Flux standard actions.",
-  "main": "dist/bundle.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/reactor-studio/re-create-actions",
   "author": "Vedran Blazenka <blazenka.vedran@gmail.com>",
   "license": "MIT",
