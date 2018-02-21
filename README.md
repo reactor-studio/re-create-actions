@@ -17,10 +17,15 @@ import {
 
 // Constans
 const GET_GITHUB_USERS = 'GET_GITHUB_USERS';
+const SAVE_FORM_DATA = 'SAVE_FORM_DATA';
 
 // Create action creator
 export const getGithubUsers = createAction(GET_GITHUB_USERS);
 // Use: dispatch(getGithubUsers())
+
+// Create action creator with custom payload creator
+// with this you can create custom payload creators
+export const saveFormData = createAction(SAVE_FORM_DATA, payload => payload); 
 
 // Create network types/constants
 const GET_GITHUB_USERS_RT = createRequestTypes('GET_GITHUB_USERS_RT');
